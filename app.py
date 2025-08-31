@@ -11,7 +11,7 @@ def recommend(movie):
     for item in recommended_movie:
         recommended_list.append(movies.iloc[item[0]]["title"])
     return recommended_list
-st.title("Movie Recommendation")
+st.title("Movie Recommendation Tool")
 option = st.selectbox(
     "Search your Movie",
     movies["title"].values
